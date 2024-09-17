@@ -42,11 +42,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp F12  &kp F1        &kp F2      &kp F3                &kp F4                 &kp F5                    &kp F6    &kp F7      &kp F8        &kp F9     &kp F10   &kp F11
-&trans   &kp ASTERISK  &kp SLASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                    &trans    &kp DELETE  &kp INSERT    &trans     &kp HOME  &kp PAGE_UP
-&trans   &kp PLUS      &kp MINUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                    &kp LEFT  &kp DOWN    &kp UP_ARROW  &kp RIGHT  &kp END   &kp PAGE_DOWN
-&trans   &kp COMMA     &kp PERIOD  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans    &tog 2  &trans    &trans      &trans        &trans     &trans    &trans
-                                   &trans                &trans                 &trans  &trans    &trans  &trans    &trans      &trans
+&kp F12  &kp F1        &kp F2      &kp F3                &kp F4                 &kp F5                       &kp F6    &kp F7      &kp F8        &kp F9     &kp F10   &kp F11
+&trans   &kp ASTERISK  &kp SLASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL                    &trans    &kp DELETE  &kp INSERT    &trans     &kp HOME  &kp PAGE_UP
+&trans   &kp PLUS      &kp MINUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                       &kp LEFT  &kp DOWN    &kp UP_ARROW  &kp RIGHT  &kp END   &kp PAGE_DOWN
+&trans   &kp COMMA     &kp PERIOD  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans    &tog 2  &trans    &trans      &trans        &trans     &trans    &trans
+                                   &trans                &trans                 &trans     &trans    &trans  &trans    &trans      &trans
             >;
         };
 
