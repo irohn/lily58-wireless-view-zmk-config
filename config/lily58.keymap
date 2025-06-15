@@ -22,47 +22,38 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE                    &kp N1  &kp N2  &kp N3            &kp N4         &kp N5                                 &kp N6         &kp N7  &kp N8     &kp N9   &kp N0         &kp MINUS
-&kp TAB                      &kp Q   &kp W   &kp E             &kp R          &kp T                                  &kp Y          &kp U   &kp I      &kp O    &kp P          &kp BACKSLASH
-&mt LEFT_CONTROL ESCAPE      &kp A   &kp S   &kp D             &kp F          &kp G                                  &kp H          &kp J   &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&mt LEFT_SHIFT LEFT_BRACKET  &kp Z   &kp X   &kp C             &kp V          &kp B         &kp DELETE    &kp EQUAL  &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH       &mt RSHFT RIGHT_BRACKET
-                                             &kp LEFT_CONTROL  &kp LEFT_META  &kp LEFT_ALT  &kp SPACE     &kp ENTER  &kp BACKSPACE  &mo 2   &tog 1
-            >;
-        };
-
-        mac {
-            display-name = "Mac";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp LEFT_ALT  &kp LEFT_GUI  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-        fn {
-            bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                       &kp F6           &kp F7           &kp F8           &kp F9          &kp F10         &kp F11
-&trans   &trans  &trans  &trans  &trans  &trans                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans          &trans          &trans
-&trans   &trans  &trans  &trans  &trans  &trans                       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans          &kp UP_ARROW    &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &kp HOME    &kp END  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-                         &trans  &trans  &trans  &trans      &trans   &kp KP_NUMBER_0  &trans           &mo 3
+&kp GRAVE                &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                    &kp N6        &kp N7  &kp N8     &kp N9   &kp N0         &kp MINUS
+&mt RIGHT_ALT TAB        &kp Q   &kp W   &kp E   &kp R   &kp T                                     &kp Y         &kp U   &kp I      &kp O    &kp P          &mt RIGHT_ALT NON_US_BACKSLASH
+&mt LEFT_CONTROL ESCAPE  &kp A   &kp S   &kp D   &kp F   &kp G                                     &kp H         &kp J   &kp K      &kp L    &kp SEMICOLON  &mt RIGHT_CONTROL SQT
+&kp LEFT_SHIFT           &kp Z   &kp X   &kp C   &kp V   &kp B          &trans       &mo 2         &kp N         &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
+                                         &trans  &trans  &kp BACKSPACE  &kp SPACE    &lt 1 RETURN  &kp LEFT_GUI  &trans  &trans
             >;
 
-            label = "Func";
+            label = "BASE";
         };
 
-        comm {
+        layer_1 {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F12  &kp F1  &kp F2  &kp F3  &kp F4    &kp F5                            &kp F6           &kp F7         &kp F8      &kp F9    &kp F10          &kp F11
+&trans   &trans  &trans  &trans  &trans    &trans                            &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp INSERT  &kp HOME  &kp PAGE_UP      &trans
+&trans   &trans  &trans  &trans  &trans    &trans                            &kp EQUAL        &kp PLUS       &kp DELETE  &kp END   &kp PAGE_DOWN    &trans
+&trans   &trans  &trans  &trans  &kp LBKT  &kp LEFT_BRACE  &trans    &trans  &kp RIGHT_BRACE  &kp RBKT       &trans      &trans    &kp PRINTSCREEN  &trans
+                         &trans  &trans    &trans          &trans    &trans  &trans           &trans         &trans
+            >;
+
+            label = "LAYER 1";
+        };
+
+        bluetooth {
+            bindings = <
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp K_MUTE
+&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans          &trans             &kp C_PLAY_PAUSE  &trans
+&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans          &trans             &trans            &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &kp C_PREVIOUS  &kp C_NEXT         &trans            &trans
                                         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans
             >;
 
-            label = "Comm";
+            label = "BT";
         };
     };
 };
